@@ -2,7 +2,6 @@ header {
   background-image: url("../images/header.png");
   background-repeat: no-repeat;
   background-size: cover;
-  max-height: 600px;
   height: 80vh;
   width: 100%;
 }
