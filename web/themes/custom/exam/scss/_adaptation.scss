@@ -73,6 +73,13 @@
       }
     }
   }
+  .page-node-type-contact-page {
+    .node--type-contact-page {
+      .field--name-body {
+        margin-left: 0;
+      }
+    }
+  }
   .node__content {
     flex-direction: column;
     padding: 0 20px;
@@ -178,6 +185,11 @@
   }
   .block-better-social-sharing-buttons {
     margin: 0 0 0 10px;
+  }
+  .search-block-form {
+    form {
+      margin-right: 0;
+    }
   }
   .view-filters {
     form {

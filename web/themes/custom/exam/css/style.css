@@ -116,7 +116,7 @@ footer svg {
   font-size: 16px;
 }
 .menu li .is-active {
-  padding-bottom: 32px;
+  padding-bottom: 33px;
   border-bottom: 6px solid #6e9bca;
 }
 .menu li a {
@@ -311,6 +311,9 @@ footer svg {
   #block-burgermenu {
     margin-right: 30px;
     margin-left: auto;
+  }
+  #block-burgermenu:hover {
+    background-color: #CCCCCC;
   }
 
   #block-descriptionheader {
@@ -938,6 +941,10 @@ h1 {
     border-top: none;
   }
 
+  .page-node-type-contact-page .node--type-contact-page .field--name-body {
+    margin-left: 0;
+  }
+
   .node__content {
     flex-direction: column;
     padding: 0 20px;
@@ -1011,6 +1018,10 @@ h1 {
 
   .block-better-social-sharing-buttons {
     margin: 0 0 0 10px;
+  }
+
+  .search-block-form form {
+    margin-right: 0;
   }
 
   .view-filters form {
@@ -1108,7 +1119,7 @@ h1 {
 .node--type-contact-page .field--name-field-contact-form .webform-ajax-form-wrapper form .form-item textarea {
   height: 200px;
 }
-.node--type-contact-page .field--name-field-contact-form .webform-ajax-form-wrapper form #edit-actions {
+.node--type-contact-page .field--name-field-contact-form .webform-ajax-form-wrapper form .webform-actions {
   text-align: left;
 }
 .node--type-contact-page .field--name-field-contact-form .webform-ajax-form-wrapper form .webform-button--submit {
