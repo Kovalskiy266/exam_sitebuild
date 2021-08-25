@@ -74,7 +74,7 @@
     margin-bottom: 0;
     line-height: 2em;
     border: 2px solid $light_gray;
-    border-radius: 0px;
+    border-radius: 0;
   }
 
   .form-search {
@@ -153,6 +153,13 @@ ul {
   }
   .region {
     top: 0;
+  }
+  menu {
+    li {
+      .is-active {
+        padding-bottom: 29px;
+      }
+    }
   }
   #block-logo {
     width: 100%;
@@ -278,10 +285,6 @@ ul {
     border: 2px solid $dark_blue;
     transition: border-radius 300ms ease;
     cursor: pointer;
-    &:hover {
-      //background-color: $light_gray;
-    }
-
     &.is-open {
       .menu__burger {
         opacity: 0;

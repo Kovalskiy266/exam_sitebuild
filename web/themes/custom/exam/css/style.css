@@ -2,7 +2,8 @@ header {
   background-image: url("../images/header.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  max-height: 600px;
+  height: 80vh;
   width: 100%;
 }
 
@@ -153,7 +154,7 @@ footer svg {
   margin-bottom: 0;
   line-height: 2em;
   border: 2px solid #CCCCCC;
-  border-radius: 0px;
+  border-radius: 0;
 }
 .search-block-form .form-search {
   display: inline-block;
@@ -223,6 +224,10 @@ footer svg {
 
   .region {
     top: 0;
+  }
+
+  menu li .is-active {
+    padding-bottom: 29px;
   }
 
   #block-logo {
@@ -544,10 +549,10 @@ h1 {
 .views-element-container .view-news-content-page .view-content .views-field-title:before {
   display: block;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   height: 100%;
-  width: 0px;
+  width: 0;
   z-index: -1;
   content: "";
   color: #ffffff;
