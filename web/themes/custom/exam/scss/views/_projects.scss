@@ -1,0 +1,103 @@
+.block-views-blockprojects-teaser-block-1 {
+  div {
+     @include gradient;
+    }
+    padding-bottom: 100px;
+    .view-projects-teaser {
+      background: none;
+      margin-top: 20px;
+      padding-bottom: 0;
+      .view-content {
+        background: none;
+        padding: 30px 0;
+        .views-row {
+          @include views_style;
+          margin: 0 11px;
+          padding-bottom: 0;
+          .views-field {
+            width: 290px;
+            background: white;
+          }
+          background: transparent;
+          .views-field, .field-content {
+            background: none;
+            padding-bottom: 0;
+          }
+          .views-field-title {
+            padding-top: 10px;
+            font-size: 24px;
+            color: $dark_blue;
+            text-transform: uppercase;
+            background: $white;
+            margin-top: -5px;
+          }
+          .views-field-term-node-tid {
+            padding-top: 10px;
+            a {
+              text-decoration: none;
+              font-size: 18px;
+              &:hover {
+                font-weight: 800;
+              }
+            }
+            background: $white;
+            a[href*="term/4"] {
+              color: $blue_light;
+            }
+            a[href*="term/2"] {
+              color: $violet;
+            }
+            a[href*="term/1"] {
+              color: $yellow_green;
+            }
+            a[href*="term/3"] {
+              color: $red;
+            }
+          }
+          .views-field-view-node {
+            padding: 30px 0 20px 0;
+            border-bottom: 2px solid $dark_blue;
+            background: $white;
+
+            a {
+              @include link_views($dark_blue);
+              &:hover {
+                @include hover_button($dark_blue);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .pager {
+    ul {
+      padding-bottom: 70px;
+      .is-active {
+        border-radius: 50%;
+        background-color: $light_gray;
+        a {
+          color: $black;
+        }
+      }
+      li {
+        &:hover {
+          background-color: $light_gray;
+          border-radius: 50%;
+        }
+        a {
+          text-decoration: none;
+          color: $gray;
+          margin-left: 5px;
+          &:hover {
+            color: $black;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+
+
+
+

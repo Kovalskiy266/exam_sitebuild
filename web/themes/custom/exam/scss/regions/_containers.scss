@@ -1,0 +1,65 @@
+body {
+  overflow-x: hidden;
+}
+
+.layout-container {
+  width: 100%;
+}
+
+.region {
+  width: 100%;
+}
+
+.region-primary-menu {
+  max-width: 1250px;
+  width: 100%;
+  padding-left: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  padding: 0;
+}
+
+.view {
+  @include container;
+}
+.views-element-container {
+  padding: 50px 0;
+}
+.region-footer {
+  @include container;
+}
+
+.block-views-blockslider-view-block-1 {
+  padding-bottom: 0;
+}
+
+.region-description-header {
+  @include container;
+  height: 100%;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 20px;
+  background: linear-gradient(to right, $gray 50%,$gray 50%);
+  background-position: bottom;
+  background-size: 55px 4px;
+  background-repeat: no-repeat;
+  margin-top: 60px;
+}
+
+.node__content {
+  text-align: center;
+  margin-top: 0;
+  @include container;
+}
+
+.node__meta {
+  padding: 0;
+  .field--name-user-picture {
+    text-align: center;
+  }
+}

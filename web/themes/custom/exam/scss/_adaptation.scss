@@ -1,0 +1,276 @@
+@media (max-width:900px) {
+  .view-about-line, .view-projects-teaser  {
+    .view-content{
+      .views-row {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+        .views-field-title{
+          margin-top: 10px;
+        }
+        .views-field-view-node{
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+@media (max-width:1020px) {
+  .view-services-teaser {
+    .view-content {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      @include adapt_block;
+      .views-row {
+        width: 40%;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+@media (max-width: 1240px) {
+  .views-element-container{
+    .view-our-team-teaser {
+      .view-content {
+        @include adapt_block;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        .views-row {
+          margin-bottom: 50px;
+          padding-top: 0;
+          width: 45%;
+          .views-field-field-link-social {
+            margin: 30px 0 0;
+            float: left;
+            width: 50%;
+            text-align: right;
+          }
+          .views-field-link-flag {
+            float: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 772px) {
+  .views-element-container {
+    .view-services-teaser, .view-our-team-teaser {
+      .view-content {
+        padding: 0;
+
+        .views-row {
+          width: 80%;
+          margin-bottom: 0;
+          border-top: 1px solid $light_gray;
+          border-bottom: 1px solid $light_gray;
+          padding: 20px 0;
+
+          &:first-child {
+            border-top: none;
+          }
+        }
+      }
+    }
+  }
+  .node__content {
+    flex-direction: column;
+    padding: 0 20px;
+      .field--name-body {
+        p{
+          text-align: center;
+        }
+      }
+
+
+    iframe {
+      width: 100%;
+    }
+
+    .field--name-body {
+      margin-left: 0;
+    }
+
+    .field--name-field-title- {
+      left: 28%;
+    }
+  }
+  .region-primary-menu {
+    max-height: 160px;
+    height: 100%;
+
+    #block-logo {
+      width: 100%;
+    }
+
+    nav {
+      .menu {
+        top: 160px;
+      }
+    }
+
+    .fixed-social-sharing-buttons {
+      top: 540px;
+    }
+  }
+  .block-views-blockprojects-teaser-block-1 {
+    div {
+      .view-projects-teaser {
+        .view-content {
+          .views-row {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@media(max-width: 400px) {
+  .view {
+    padding: 0 15px;
+  }
+  .view-our-team-teaser {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .view-news-teaser {
+    .view-content {
+      .views-row {
+        flex-direction: column;
+
+        .date-fields {
+          display: flex;
+          height: 28px;
+          font-size: 24px;
+
+          .views-field {
+            .field-content {
+              font-size: 24px;
+              margin-right: 5px;
+            }
+          }
+        }
+
+        .about-author-fields {
+          flex-direction: column;
+          margin-top: 20px;
+
+          .adapt-fields {
+            margin-left: 0;
+          }
+
+          .views-field-field-time-ago {
+            margin-left: 3px;
+          }
+
+          .views-field-field-time-ago {
+            margin-left: 0;
+          }
+        }
+
+      }
+    }
+  }
+  .block-better-social-sharing-buttons {
+    margin: 0 0 0 10px;
+  }
+  .view-filters {
+    form {
+      max-width: 360px;
+      .form--inline {
+        .form-item {
+          .form-text {
+            width: 188px;
+            box-sizing: border-box;
+          }
+        }
+      }
+    }
+  }
+  #block-descriptionheader {
+    max-width: 298px;
+    left: 50%;
+    span {
+      &:first-child {
+        font-size: 48px;
+      }
+
+      &:nth-child(2) {
+        font-size: 32px;
+      }
+
+      &:nth-child(3) {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1192px) {
+  .view-news-teaser {
+    .view-content {
+      flex-wrap: wrap;
+
+      .views-row {
+        width: 100%;
+
+        &:first-child {
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 601px) {
+  .view-news-teaser {
+    .views-row {
+      .adapt-fields {
+        flex-direction: column;
+        margin-left: 20px;
+      }
+      .views-field {
+      .field-content {
+        fieldset {
+          .views-field-term-node-tid {
+            &:before {
+              content: none;
+            }
+          }
+        }
+      }
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .block-views-blockprojects-teaser-block-1 {
+    .view-projects-teaser {
+      .view-content {
+        @include adapt_block;
+
+        .views-row {
+          width: 45%;
+          margin-bottom: 20px;
+
+          .views-field {
+            margin: 0 auto;
+          }
+
+          .views-field-title {
+            margin-top: -5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+

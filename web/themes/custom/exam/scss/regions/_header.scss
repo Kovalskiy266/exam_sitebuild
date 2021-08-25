@@ -1,0 +1,51 @@
+header {
+  background-image: url("../images/header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+}
+
+#block-descriptionheader{
+  position: relative;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  span {
+    display: block;
+    text-transform: uppercase;
+    &:first-child {
+      font-size: 60px;
+      color: $white;
+      line-height: 0.7;
+    }
+    &:nth-child(2) {
+      font-size: 36px;
+      color: $dark_blue;
+    }
+    &:nth-child(3){
+      font-size: 12px;
+      color: $blue;
+    }
+  }
+}
+
+
+#block-logo {
+  background-color: $dark_blue;
+  text-align: center;
+  padding: 0 30px;
+  min-height: 90px;
+
+  span {
+    color: $lite_gray;
+    font-size: 14px;
+    display: block;
+
+    &:first-child {
+      color: $heavenly;
+      font-size: 32px;
+    }
+  }
+}

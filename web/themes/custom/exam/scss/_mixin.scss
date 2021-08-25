@@ -1,0 +1,86 @@
+@mixin container {
+  max-width: 1300px;
+  padding: 0 25px;
+  overflow: hidden;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@mixin button_link {
+  padding: 6px;
+  color: $white;
+  text-decoration: none;
+  background-color: $heavenly;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+@mixin title_block {
+  color: $black;
+  font-size: 24px;
+  font-weight: bolder;
+  overflow: hidden;
+  text-align: center;
+  font-size: 30px;
+  @include container;
+  &:before, &:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 2px;
+    background-color: $light_gray;
+    position: relative;
+  }
+  &:before {
+    margin-left: -100%;
+    left: -14px;
+  }
+  &:after {
+    margin-right: -100%;
+    right: -14px;
+  }
+}
+
+@mixin link_views($background-color) {
+  background-color: $background-color;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 10px;
+  color: $white;
+}
+
+@mixin views_style {
+  text-align: center;
+  width: 25%;
+  margin: 0 20px;
+}
+
+@mixin hover_button($color) {
+  background: rgba(0,0,0,0);
+  color: $color;
+  box-shadow: inset 0 0 0 3px $color;
+}
+
+@mixin hover_block($color) {
+  box-shadow: 10px 6px 13px 4px $color;
+  transition: 0.8s linear 0s;
+  -webkit-transform: scale(1.01);
+  border-radius: 10px;
+}
+@mixin adapt_block {
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@mixin gradient {
+  background: repeating-linear-gradient(
+      -45deg,
+      $light_gray,
+      $light_gray 10%,
+      transparent 10%,
+      transparent 50%
+  );
+  background-size: 8px 8px;
+}

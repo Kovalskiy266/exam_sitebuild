@@ -1,0 +1,100 @@
+.view-services-teaser {
+  .view-content {
+    padding: 30px 0;
+    margin: 30px 0;
+    .views-row {
+      @include views_style;
+      .views-field {
+        margin: 10px 0;
+      }
+      .views-field-field-services-image {
+        margin-bottom: 30px;
+      }
+      .views-field-view-node {
+        margin: 30px 0;
+        a {
+          @include link_views($blue);
+          &:hover {
+            @include hover_button($blue);
+          }
+        }
+      }
+      .views-field-title {
+        text-transform: uppercase;
+        font-size: 20px;
+        a{
+          text-decoration: none;
+          color: $black;
+        }
+      }
+      .views-field-body {
+        color: $light_gray;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+.views-element-container {
+  .view-clients-page {
+    .view-content {
+      flex-wrap: wrap;
+      .views-row  {
+        margin: 0 20px;
+      }
+    }
+  }
+  .view-services, .view-projects, .view-team-page, .view-news-view-page,
+  .view-news-content-page {
+    .view-content {
+      display: flex;
+      flex-direction: column;
+      text-transform: uppercase;
+
+      .views-field-title {
+        a{
+          text-decoration: none;
+          &:hover {
+            color: $white;
+          }
+        }
+          cursor: pointer;
+          display: block;
+          position: relative;
+          transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+          padding: 10px;
+        &:hover {
+          color: $white;
+          background-color: transparent;
+          a {
+            color: $white;
+          }
+        }
+        &:hover {
+          &:before {
+            right: auto;
+            left: 0%;
+            width: 100%;
+            color: $white;
+          }
+        }
+        &:before {
+          display: block;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          height: 100%;
+          width: 0px;
+          z-index: -1;
+          content: '';
+          color: $white;
+          background: $dark_blue;
+          transition: all 0.6s cubic-bezier(0.42, 0, 0.58, 1);
+
+        }
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+
